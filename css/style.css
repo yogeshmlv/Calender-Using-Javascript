@@ -1,0 +1,132 @@
+
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #FFFCFF;
+  }
+  button {
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(209, 31, 31);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: rgb(14, 12, 12);
+  }
+  
+  #header {
+    padding: 50px;
+    color: #d4117c;
+    font-size: 35px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  #header button {
+    background-color:#92a1d1;
+  }
+  #container {
+    width: 870px;
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #0b0b0a;
+
+  }
+  #weekdays div {
+    width: 120px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 110px;
+    padding: 10px;
+    height: 130px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0px 0px 3px #988cf3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: sans-serif;
+  }
+  .day:hover {
+    background-color: #22cede;
+  }
+  
+  .day + #currentDay {
+    background-color:#d6e5eb;
+  }
+  .event {
+    font-size: 20px;
+    padding: 3px;
+    background-color: #FFFCFF;
+    color: rgb(247, 17, 178);
+    border-radius: 3px;
+    max-height: 90px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: #e8f4fa;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton {
+    background-color: #92a1d1;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }
